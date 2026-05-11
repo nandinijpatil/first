@@ -1,0 +1,119 @@
+<div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Student Feedback</h1>
+                <p>first step to become a bestest</p>
+            </div>
+            
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <div class="input-group">
+                        <i class="fa-solid fa-book"></i>
+                        <select id="course" name="course" required>
+                            <option value="" disabled selected>Select your course</option>
+                            <option value="FSD">FULL STACK DEVELOPMENT</option>
+                            <option value="DA">DATA ANALYTICS</option>
+                            <option value="IOS">INTRODUCTION TO OPERATING SYSTEM</option>
+                            <option value="P AND S">PROBABLITY AND STATISTICS</option>
+                            <option value="M AND A">MICROCONTROLLER AND ITS APPLICATION</option>
+                            <option value="SE">SECOND EDUCATION</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>How would you rate this course?</label>
+                    <div class="rating-container">
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"><i class="fa-solid fa-star"></i></label>
+                            
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"><i class="fa-solid fa-star"></i></label>
+                            
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"><i class="fa-solid fa-star"></i></label>
+                            
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"><i class="fa-solid fa-star"></i></label>
+                            
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"><i class="fa-solid fa-star"></i></label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Which aspects of the course were most valuable?</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="lectures" name="valuable" value="lectures">
+                            <label for="lectures">Lectures</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="assignments" name="valuable" value="assignments">
+                            <label for="assignments">Assignments</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="readings" name="valuable" value="readings">
+                            <label for="readings">Readings</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="discussions" name="valuable" value="discussions">
+                            <label for="discussions">Group Discussions</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="projects" name="valuable" value="projects">
+                            <label for="projects">Projects</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="instructor">STUDENT ENGAGENMENT</label>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="10" value="8" id="instructor" name="instructor">
+                        <div class="slider-labels">
+                            <span>Poor</span>
+                            <span>Excellent</span>
+                        </div>
+                        <div class="slider-value">8</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback">Additional Comments</label>
+                    <textarea id="feedback" name="feedback" placeholder="Please share your thoughts, suggestions or concerns..."></textarea>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="reset" class="reset-btn">Reset</button>
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                </div>
+            </form>
+            
+            <div id="success-message" class="success-message">
+                <i class="fa-solid fa-circle-check"></i>
+                <h2>Thank You!</h2>
+                <p>Your feedback has been submitted successfully.</p>
+                <button id="new-feedback" class="new-feedback-btn">Submit New Feedback</button>
+            </div>
+        </div>
+    </div>
